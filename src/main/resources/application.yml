@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ExceptionManager
+  datasource:
+    # Tipo de base de datos
+    driverClassName: com.mysql.cj.jdbc.Driver
+    # URL de la base de datos
+    url: jdbc:mysql://localhost:3306/ExceptionManager?useSSL=false&createDatabaseIfNotExist=true
+    # Usuario de la base de datos
+    username: samuel
+    # Contraseña de la base de datos
+    password: 12345
+  # Propiedades de JPA e Hibernate
+  jpa:
+    # Dialecto de MySQL
+    database: mysql
+    # Modo de autogeneración de DDL
+    hibernate:
+      ddl-auto: update
+    # Mostrar sentencias SQL en la consola
+    show-sql: false
